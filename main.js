@@ -37,7 +37,13 @@ var num3= 3;
 function isVowel(char){
     // Your answer here
 }
-
+function vowel(char){
+    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+      return "true";
+    } else {
+      return "false";
+    }
+}
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
@@ -63,7 +69,10 @@ function avg(num1, num2, num3) {
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // A:
-
+function getLength(string) {
+  var length = string.length;
+  return length;
+}
 
 
 // 7.
@@ -87,7 +96,7 @@ function greaterThan (num1, num2){
 // is the parameter that was passed in.
 // A:
 function greet(name){
-  return ('Hello, ') + (name) + ('!');
+  return 'Hello, ' + name + '!';
 }
 
 
@@ -99,3 +108,6 @@ function greet(name){
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // A:
+function greet(word1, word2, word3, word4){
+  return 'the ' + word1 + ' jumped ' + word2 + ' in ' + word3 + ' big' + word4 + '!';
+}
