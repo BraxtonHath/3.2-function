@@ -20,9 +20,9 @@ var num3= 3;
 
 //function maxOfThree(){
     function maxOfThree(num1, num2, num3) {
-      if ((num1 >= num2) && (num1 >= num3)){
+      if (num1 > num2 && num1 > num3){
         return  num1; //'num1 is greatest';
-      } else if ((num2 >= num1) && (num2 >= num3)){
+      } else if (num2 > num3){
         return num2; //'num2 is greatest';
       } else {
         return num3; //'num3 is greatest';
@@ -82,9 +82,9 @@ function getLength(string) {
 // A:
 function greaterThan (num1, num2){
   if (num1 > num2){
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 }
 
@@ -108,6 +108,6 @@ function greet(name){
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // A:
-function greet(word1, word2, word3, word4){
+function madlib(word1, word2, word3, word4){
   return 'the ' + word1 + ' jumped ' + word2 + ' in ' + word3 + ' big' + word4 + '!';
 }
